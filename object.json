@@ -1,0 +1,48 @@
+{
+  "type": "simulator",
+  "id": "17329e5a-92c9-11e7-8432-080027dcba00",
+  "name": "hxpump",
+
+  "architecture":"x86-64",
+  "environment":"ubuntu:WCPS",
+
+  "build": {
+    "command": "sh build.sh"
+  },
+
+"inputs": [
+    {
+	"type": "WCPSStaticOutput"
+    }
+  ],
+
+  "run": {
+    "language": "python",
+    "version": "3",
+    "script": "launch.py"
+  },
+
+  "configurations": [
+    {
+      "schema": "simulation_schema.json",
+      "file": "simulation.json",
+      "type": "application/json",
+      "name": "Simulation configuration"
+    }
+  ],
+
+  "outputs": [
+    {
+      "createIn": "new_output",
+      "file": "f1.jpeg",
+      "type": "application/jpeg"
+    }
+  ],
+
+  "dependencies":[{
+    "id":"d02f2d0c-92c8-11e7-8432-080027dcba00",
+    "type": "library",
+    "name": "Matlab",
+    "revision":"dd01641329680a35834b90c3e494cec4ad98f43e"
+  }]
+}

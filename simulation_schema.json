@@ -1,0 +1,194 @@
+{
+  "delay":{
+      "type": "int",
+      "label": "Time delay (seconds)",
+      "default": 0,
+      "description":"The delay between time..."
+  },
+  "Pref":{
+      "type": "float",
+      "label": "Power plant Power Generation (in megawatts)",
+      "default": 42,
+      "description":"(Pref) This is the how much power is expected to be consumed from the nuclear power plant."
+  },
+  "Ts":{
+      "type": "float",
+      "label": "Sampling period",
+      "default": 0.1,
+      "description":"(Ts) The Sampling period. Has to macth the TinyOS WCPS simulation sampling period."
+  },
+  "h":{
+      "type": "float",
+      "label": "Sampling period*",
+      "default": 0.1,
+      "description":"(h) The Sampling period extra parameter. The same as above."
+  },
+  "Tfinal":{
+      "type": "int",
+      "label": "Total Simulation time (in seconds)",
+      "default": 300,
+      "description":"(Tfinal) The simulation execution time in seconds."
+  },
+  "wref":{
+      "type": "float",
+      "label": "Power filter frequency gain",
+      "default": 0.1,
+      "description":"(wref) Affects how the power plant power changes at each time step."
+  },
+  "rhoh":{
+      "type": "int",
+      "label": "Hot side fluid density",
+      "default":1940,
+      "description":"(rhoh) Affects the the model's hot side fluid density."
+  },
+  "Vh":{
+      "type": "float",
+      "label": "Hot side fluid volume",
+      "default":1.1508,
+      "description":"(Vh) Affects the the model's hot side fluid volume."
+  },
+  "ch":{
+      "type": "int",
+      "label": "Hot side specific fluid density",
+      "default":2414,
+      "description":"(ch) Affects the model's hot side specifc fluid density."
+  },
+  "mdoth":{
+      "type": "int",
+      "label": "Hot side fluid mass flow rate",
+      "default":350,
+      "description":"(mdoth) Affects the model's hot side fluid mass flow rate."
+  },
+  "hh":{
+      "type": "int",
+      "label": "Hot side transfer heat coefficient",
+      "default":23800,
+      "description":"(hh) Affects the model's hot side transfer heat coefficient."
+  },
+  "Thi":{
+      "type": "int",
+      "label": "Hot leg temperature input",
+      "default":700,
+      "description":"(Thi) Affects the model's hot leg temperature input."
+  },
+  "rhoc":{
+      "type": "int",
+      "label": "Cold side fluid density",
+      "default":2020,
+      "description":"(rhoc) Affects the the model's cold side fluid density."
+  },
+  "Vc":{
+      "type": "float",
+      "label": "Cold side fluid volume",
+      "default":1.5127,
+      "description":"(Vc) Affects the the model's cold side fluid volume."
+  },
+  "cc":{
+      "type": "int",
+      "label": "Cold side specific fluid density",
+      "default":1901,
+      "description":"(cc) Affects the model's cold side specifc fluid density."
+  },
+  "mdotc":{
+      "type": "int",
+      "label": "Cold side fluid mass flow rate",
+      "default":247,
+      "description":"(mdotc) Affects the model's cold side fluid mass flow rate."
+  },
+  "hc":{
+      "type": "int",
+      "label": "Cold side transfer heat coefficient",
+      "default":24500,
+      "description":"(hc) Affects the model's cold side transfer heat coefficient."
+  },
+  "Tci":{
+      "type": "int",
+      "label": "Cold leg temperature input",
+      "default":550,
+      "description":"(Tci) Affects the model's cold leg temperature input."
+  },
+  "rhow":{
+      "type": "int",
+      "label": "Wall side fluid density",
+      "default":8860,
+      "description":"(rhow) Affects the the model's wall side fluid density."
+  },
+  "Vw":{
+      "type": "float",
+      "label": "Wall side Fluid Volume",
+      "default":0.4675,
+      "description":"(Vw) Affects the the model's wall side fluid volume."
+  },
+  "cw":{
+      "type": "int",
+      "label": "Wall side specific Fluid Density",
+      "default":578,
+      "description":"(cw) Affects the model's wall side specifc fluid density."
+  },
+  "A":{
+      "type": "float",
+      "label": "Heat exchange area",
+      "default":292.2,
+      "description":"(A) Surface area of the heat exhanger."
+  },
+  "wp":{
+      "type": "float",
+      "label": "Pump frequency*",
+      "default": 0.1,
+      "description":"(wp) Frequency for the pump dynamics. Model depency constant. Used in the covariance initial condition state matrix calculation."
+  },
+  "wa":{
+      "type": "float",
+      "label": "Hot leg mass flow rate*",
+      "default": 0.002,
+      "description":"(wa) Frequency for the hot leg mass flow rate dynamics. Used in the covariance initial condition state matrix calculation."
+  },
+  "wb":{
+      "type": "float",
+      "label": "Hot Leg temperature frequency input*",
+      "default": 0.005,
+      "description":"(wb) Frequency for the hot leg temperature input dynamics. Used in the covariance initial condition state matrix calculation."
+  },
+  "Sw_tc":{
+      "type": "float",
+      "label": "Process Cold Leg ns density",
+      "default": 0.05,
+      "description":"(Sw_tc) Process ns (noise spectro) density for the cold leg temperature input."
+  },
+  "Sw_mh":{
+      "type": "int",
+      "label": "Process Hot Mass spectro density flow rate",
+      "default": 25,
+      "description":"(Sw_mh) Process ns (noise spectro) density for the hot mass flow rate."
+  },
+  "Sw_th":{
+      "type": "int",
+      "label": "Process Hot Leg ns temperture input",
+      "default": 25,
+      "description":"(Sw_th) Process ns (noise spectro) density for the hot leg temperature input."
+  },
+  "Sv_thi":{
+      "type": "float",
+      "label": "Sensor Hot Leg ns temperature input",
+      "default": 0.05,
+      "description":"(Sv_thi) Sensor ns (noise spectro) density for the hot leg temperature input."
+  },
+  "Sv_tho":{
+      "type": "float",
+      "label": "Sensor Hot Leg ns temperature output",
+      "default": 0.01,
+      "description":"(Sv_tho) Sensor ns (noise spectro) density for the hot leg temperature ouput."
+  },
+  "Sv_mh":{
+      "type": "float",
+      "label": "Sensor Hot Mass ns density flow rate",
+      "default": 0.05,
+      "description":"(Sv_mh) Sensor ns (noise spectro) density for the hot leg mass flow rate."
+  },
+  "x0":{
+      "type": "string",
+      "label": "Steady state initial condition parameters",
+      "default": "[650.2 638.3 644.2 350 700 250.6]",
+      "description":"(xo) Steady state initial condition parameter. [hot leg output - cold leg out - wall temp output - hot leg mass flow rate - hot leg temp input - pump output]"
+  }
+}
